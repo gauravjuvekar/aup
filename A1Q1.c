@@ -4,18 +4,9 @@
 #include <fcntl.h>
 #include <errno.h>
 
-size_t getFilesize(const char* filename) {
-	struct stat st;
-	if(stat(filename, &st) != 0) {
-		return 0;
-	}
-	return st.st_size;   
-}
-
 int main(){
 
 	int fd = open("f1", O_RDWR | O_CREAT | O_APPEND, S_IRUSR | S_IWUSR);
-	int len = getFilesize("f1");
 
 	if(fd == -1){
 		perror("open failed");
