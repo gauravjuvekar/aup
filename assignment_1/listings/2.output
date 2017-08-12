@@ -1,0 +1,13 @@
+$ gcc 2.c -o truncate
+$ echo "abcdefghijklmnopqrstuvwxyz" > file.txt
+$ cat file.txt
+abcdefghijklmnopqrstuvwxyz
+$ ./truncate 10 file.txt
+$ cat file.txt
+abcdefghij$
+$ ./truncate 20 file.txt
+$ od file.txt
+0000000 061141 062143 063145 064147 065151 000000 000000 000000
+0000020 000000 000000
+0000024
+$

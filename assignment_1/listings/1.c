@@ -3,6 +3,7 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <errno.h>
+#include <unistd.h>
 
 int main(){
 
@@ -18,7 +19,7 @@ int main(){
 //	int i;
 //	for(i = 0; i < 10; i++)
 //		printf("%c", a[i]);
-	
+
 	write(fd, "hello", 5);
 	close(fd);
 
