@@ -2,6 +2,9 @@
 \begin{document}
 \section{Question 3}
 
+O_APPEND flag forces file pointer to point at the end of file whenever any operation is performed.
+So if you do lseek from start of the file, it takes the updated file pointer position as a start of file i.e. end position of old file.
+
 \lstinputlisting[%
 style=codeStyleC,
 caption=Code]{listings/3.c}
