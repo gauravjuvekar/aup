@@ -1,0 +1,11 @@
+$ gcc 4.c -o 4
+$ ./4 /dev/tty0
+File type:                character device
+I-node number:            1039
+Mode:                     20620 (octal)
+Link count:               1
+dev no.:                  6
+dev id:                   1024
+Major No:                 4
+Minor No:                 0
+$

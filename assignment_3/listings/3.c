@@ -1,9 +1,13 @@
 #include<stdio.h>
 #include<sys/types.h>
 #include<sys/stat.h>
+#include<unistd.h>
+
 int main() {
+	if (!fork()) {
         mode_t curr_mask;
         curr_mask = umask(0); /*set umask to random value*/
-        umask(curr_mask); /*restore previous umask*/
+		printf("Umask %4o\n", curr_mask);
         return 0;
-}        
+	}
+}

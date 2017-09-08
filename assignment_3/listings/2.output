@@ -1,0 +1,36 @@
+$ stat 1
+  File: '1'
+  Size: 8872      	Blocks: 24         IO Block: 4096   regular file
+Device: fc02h/64514d	Inode: 4071852     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: ( 1001/  gaurav)   Gid: ( 1001/  gaurav)
+Access: 2017-09-08 15:45:52.705227215 +0530
+Modify: 2017-09-08 15:45:40.669381682 +0530
+Change: 2017-09-08 15:45:40.669381682 +0530
+ Birth: -
+$ gcc 2.c -o 2
+$ ./2	1
+After first stat
+Last status change:       Fri Sep  8 15:45:40 2017
+Last file access:         Fri Sep  8 15:45:52 2017
+Last file modification:   Fri Sep  8 15:45:40 2017
+
+
+After second stat (after 10 seconds)
+Last status change:       Fri Sep  8 15:45:40 2017
+Last file access:         Fri Sep  8 15:45:52 2017
+Last file modification:   Fri Sep  8 15:45:40 2017
+
+
+Change time has not changed
+Access time has not changed
+Modify time has not changed
+$ stat 1
+  File: '1'
+  Size: 8872      	Blocks: 24         IO Block: 4096   regular file
+Device: fc02h/64514d	Inode: 4071852     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: ( 1001/  gaurav)   Gid: ( 1001/  gaurav)
+Access: 2017-09-08 15:45:52.705227215 +0530
+Modify: 2017-09-08 15:45:40.669381682 +0530
+Change: 2017-09-08 15:45:40.669381682 +0530
+ Birth: -
+$

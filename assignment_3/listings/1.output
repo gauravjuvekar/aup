@@ -1,0 +1,10 @@
+$ gcc 1.c -o 1
+$ echo SomeText > file1
+$ ls file*
+file1
+$ ./1
+$ ls file*
+file1  file2
+$ cat file2
+SomeText
+$
