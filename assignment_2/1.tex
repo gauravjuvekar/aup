@@ -1,0 +1,27 @@
+\documentclass[main.tex]{subfiles}
+\begin{document}
+\section{Question 1}
+“Using APIs, write the equivalent program for the following shell script.
+\begin{verbatim}
+
+mkdir junk
+for i in 1 2 3 4 5 do
+            echo hello >junk/$i
+done
+ls –l junk
+chmod –r junk
+ls –l
+chmod +r junk
+ls –l junk
+chmod –x junk
+cd junk
+chmod +x junk
+cd junk
+\end{verbatim}
+
+Write appropriate comments in the program to observe the execution output.
+
+\lstinputlisting[]{listings/1.c}
+
+\lstinputlisting[]{listings/1.output}
+\end{document}

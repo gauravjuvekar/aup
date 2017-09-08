@@ -1,0 +1,18 @@
+$ gcc 2.c -o 2
+$ ./2
+$ ln -s 2.c blah
+$ ./2
+./blah -> /home/gaurav/Code/subjets/aup/assignment_2/listings/2.c
+$ ls -la
+total 56
+drwxr-xr-x 3 gaurav gaurav  4096 Sep  8 15:30 .
+drwxr-xr-x 3 gaurav gaurav  4096 Sep  8 15:30 ..
+-rwxr-xr-x 1 gaurav gaurav  9320 Sep  8 15:27 1
+-rw-r--r-- 1 gaurav gaurav   993 Aug 21 17:16 1.c
+-rw-r--r-- 1 gaurav gaurav   355 Sep  8 15:28 1.output
+-rwxr-xr-x 1 gaurav gaurav 13736 Sep  8 15:30 2
+-rw-r--r-- 1 gaurav gaurav  2757 Aug 21 16:46 2.c
+-rw-r--r-- 1 gaurav gaurav   278 Aug 21 17:16 3.c
+lrwxrwxrwx 1 gaurav gaurav     3 Sep  8 15:30 blah -> 2.c
+drwxrwxrwx 2 gaurav gaurav  4096 Sep  8 15:27 Junk
+$

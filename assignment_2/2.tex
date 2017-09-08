@@ -1,0 +1,15 @@
+\documentclass[main.tex]{subfiles}
+\begin{document}
+\section{Question 2}
+
+A function \texttt{realpath()} resolves all symbolic links in path and returns
+the ultimate target. Write a program to list the ultimate target of the only
+filenames that are symbolic links in a directory. The program takes one optional
+argument, which is the name of a directory to be searched for the links. When no
+argument is specified, the search is conducted in the current working directory.
+Display appropriate error messages.
+
+\lstinputlisting[style=codeStyleC]{listings/2.c}
+
+\lstinputlisting[]{listings/2.output}
+\end{document}
