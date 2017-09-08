@@ -2,10 +2,13 @@
 \begin{document}
 \section{Question 2}
 
-\lstinputlisting[%
-style=codeStyleC,
-caption=Code]{listings/2.c}
+Linux provides a function as given below to truncate file to specific length.
 
-\lstinputlisting[%
-caption=Output]{listings/2.output}
+\texttt{int truncate (const char *path, off\_t len);} return 0 on success. On error, return -1,
+
+Write a program to emulate this function. Use cat command to demonstrate.
+
+\lstinputlisting[style=codeStyleC]{listings/2.c}
+
+\lstinputlisting[]{listings/2.output}
 \end{document}

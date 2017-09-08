@@ -1,5 +1,6 @@
 $ gcc 1.c -o 1
+$ cat f1
+Startingtext
 $ ./1
-$ od f1
-0000000 062550 066154 064157 066145 067554
-0000012
+$ cat f1
+Startingtext

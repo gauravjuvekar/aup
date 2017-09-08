@@ -2,10 +2,20 @@
 \begin{document}
 \section{Question 3}
 
-O_APPEND flag forces file pointer to point at the end of file whenever any operation is performed.
-So if you do lseek from start of the file, it takes the updated file pointer position as a start of file i.e. end position of old file.
+What will be the output for the program with following operation?
+\begin{enumerate}
+  \item Create a new file “f1” and write “abcde” in it and close
+  \item Open the file “f1” for writing with O\_APPEND flag
+  \item lseek to the beginning of the file
+  \item Replace the existing data in the file with “12345”
+\end{enumerate}
+Justify your answer.
 
-\lstinputlisting[%
-style=codeStyleC,
-caption=Code]{listings/3.c}
+\subsection{Explanation}
+\texttt{O\_APPEND} flag forces file pointer to point at the end of file whenever
+any operation is performed.  So if you do lseek from start of the file, it takes
+the updated file pointer position as a start of file i.e. end position of old
+file.
+
+\lstinputlisting[style=codeStyleC]{listings/3.c}
 \end{document}

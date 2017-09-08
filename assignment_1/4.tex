@@ -1,11 +1,12 @@
 \documentclass[main.tex]{subfiles}
 \begin{document}
 \section{Question 4}
+Write a program to create a file with a hole: write any 10 bytes at an offset of
+10 and another 10 bytes at an offset of 30. Using “system” function, invoke “od”
+command and view the contents. Later copy the contents of the file to another
+file without writing the bytes of 0. Once again verify the contents by invoking
+“system” with “od”.
 
-\lstinputlisting[%
-style=codeStyleC,
-caption=Code]{listings/4.c}
-
-\lstinputlisting[%
-caption=Output]{listings/4.output}
+\lstinputlisting[style=codeStyleC]{listings/4.c}
+\lstinputlisting[]{listings/4.output}
 \end{document}
