@@ -1,0 +1,5 @@
+$ gcc 3.c -o 3
+$ ./3
+Average time for getpid(): 386ns
+Average time for fork(): 41253ns
+$
