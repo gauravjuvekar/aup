@@ -1,0 +1,24 @@
+$ gcc 2.c
+$ ./a.out
+Direct call, Return val: 0
+Aut : 1, Vol : 2, Reg : 3, Glob : 4, Stat : 5
+
+In f1() : 
+Auto = 10,Vol  = 20, Reg = 30,Glob  = 40,Stat = 50
+
+After Long jump, Return val1
+Aut : 10, Vol : 20, Reg : 30, Glob : 40, Stat : 50
+
+
+* After optimization *
+
+$ gcc -O 2.c
+$ ./a.out
+Direct call, Return val: 0
+Aut : 1, Vol : 2, Reg : 3, Glob : 4, Stat : 5
+
+In f1() : 
+Auto = 10,Vol  = 20, Reg = 30,Glob  = 40,Stat = 50
+
+After Long jump, Return val1
+Aut : 1, Vol : 20, Reg : 3, Glob : 40, Stat : 50
