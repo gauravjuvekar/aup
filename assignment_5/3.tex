@@ -1,0 +1,12 @@
+\documentclass[main.tex]{subfiles}
+\begin{document}
+\section{Question 3}
+
+The parent starts as many child processes as to the value of its integer command
+line argument. The child processes simply sleep for the time specified by the
+argument, then exit. After starting all the children, the parent process must
+wait until they have all terminated before terminating itself.
+
+\lstinputlisting[style=codeStyleC]{listings/3.c}
+\lstinputlisting[]{listings/3.output}
+\end{document}
