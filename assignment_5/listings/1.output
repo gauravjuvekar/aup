@@ -1,0 +1,16 @@
+This is the parent process
+the pid is: 6434
+the parent pid is: 5159
+the real uid is : 1000
+the efective uid is : 1000
+the real gid is : 1000
+the effective gid is : 1000
+
+This is the child process
+the pid is: 6435
+the parent pid is: 6434
+the real uid is : 1000
+the efective uid is : 1000
+the real gid is : 1000
+the effective gid is : 1000
+
