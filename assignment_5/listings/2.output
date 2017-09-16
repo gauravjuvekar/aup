@@ -1,0 +1,5 @@
+$ cat input.txt 
+Hello
+$ gcc 2.c
+$ ./a.out input.txt 
+Hello
