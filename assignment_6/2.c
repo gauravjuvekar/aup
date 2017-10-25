@@ -23,18 +23,17 @@ int main() {
     return 0;
 }
 void *attach_thr(void *proc){
-    int cpu = *(int *)proc;
+    int cpu_no = *(int *)proc;
     
     cpu_set_t cpuset;
     CPU_ZERO(&cpuset);  /*Clear cpuset */
-    CPU_SET(cpu, &cpuset); /*Set bit in 'cpuset', corresponding to 'cpu'*/
+    CPU_SET(cpu_no, &cpuset); /*Set bit in 'cpuset', corresponding to 'cpu_no'*/
 
     pthread_setaffinity_np(pthread_self(), sizeof(cpu_set_t), &cpuset);
     pthread_getaffinity_np(pthread_self(), sizeof(cpu_set_t), &cpuset);
 
-    if(CPU_ISSET(cpu, &cpuset)){
-        printf("Thread attached successfully to CPU %d\n", cpu);
-    }
+    if(CPU_ISSET(cpu_no, &cpuset))
+        printf("Thread attached successfully to CPU %d\n", cpu_no);
     else
-        printf("Thread did not attach to CPU %d\n", cpu);
+        printf("Thread did not attach to CPU %d\n", cpu_no);
 }
