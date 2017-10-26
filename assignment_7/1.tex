@@ -1,0 +1,10 @@
+\documentclass[main.tex]{subfiles}
+\begin{document}
+\section{Question 1}
+The child ``exec'' call inherits the file descriptors of parent if Close\_on\_exec
+is not set. Demonstrate with an example
+
+\lstinputlisting[style=codeStyleC]{listings/1.c}
+\lstinputlisting[style=codeStyleC]{listings/1_child.c}
+\includegraphics[width=\textwidth]{figures/1_output.png}
+\end{document}
