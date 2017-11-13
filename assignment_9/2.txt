@@ -1,0 +1,1 @@
+Yes, the child can send a SIGINT and kill the parent. This can be verified by registering a handler in parent to catch SIGINT.
